@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="themeBg">#EFEFEF</color>
+    <color name="dimBG">#60000000</color>
+    <color name="themeBgLight">#FEFEFE</color>
+    <color name="textShadow">#7F000000</color>
+    <color name="layer">#80000000</color>
+    <color name="highlight">#0D000000</color>
+    <color name="buttonHighlight">#DD00574B</color>
+
+    <color name="colorPrimaryPix">#075e54</color>
+    <color name="colorPrimaryLightPix">#80075e54</color>
+
+</resources>

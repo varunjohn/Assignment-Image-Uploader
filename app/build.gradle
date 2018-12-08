@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        applicationId "com.varunjohn1990.assignmentimageupload"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    //Support Libraries
+    implementation "com.android.support:support-v4:$supportLibraryVersion"
+    implementation "com.android.support:appcompat-v7:$supportLibraryVersion"
+    implementation "com.android.support:recyclerview-v7:$supportLibraryVersion"
+    implementation "com.android.support:design:$supportLibraryVersion"
+    implementation "com.android.support:cardview-v7:$supportLibraryVersion"
+    implementation "com.android.support.constraint:constraint-layout:1.1.3"
+    implementation 'com.android.support:multidex:1.0.3'
+
+    //Http request
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+
+    //ButterKnife
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    //Google Camera Lib
+    implementation project(':library')
+
+    //Image Cropper
+    implementation project(path: ':cropper')
+
+    //Gallery image picker
+    implementation 'com.asksira.android:bsimagepicker:1.1.0'
+
+    //Progress Bar circular
+    implementation 'com.mikhaellopez:circularprogressbar:2.0.0'
+
+    //For showing and maintaining images
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    implementation("com.github.bumptech.glide:glide:4.7.1") {
+        exclude group: "com.android.support"
+    }
+
+    //Image Compression
+    implementation 'id.zelory:compressor:2.1.0'
+    implementation 'com.github.amanjeetsingh150:ImageZipper:1.3'
+
+    //Shared Preference
+    implementation 'com.shawnlin:PreferencesManager:1.0.3'
+
+    //Image Zooming
+    implementation 'com.bogdwellers:pinchtozoom:0.1'
+
+}

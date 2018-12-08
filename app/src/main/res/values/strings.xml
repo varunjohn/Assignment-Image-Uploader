@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Assignment Image Uploader</string>
+    <string name="switch_camera">Switch camera</string>
+    <string name="flash_auto">Flash auto</string>
+    <string name="flash_off">Flash off</string>
+    <string name="flash_on">Flash on</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="start_uploading">Start Uploading</string>
+    <string name="completed">Completed</string>
+    <string name="waiting">Waiting...</string>
+    <string name="retry">Click to Retry</string>
+    <string name="upload_images_to_server">Upload images to Server!</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="uploading">Uploading...</string>
+    <string name="go_to_sever_images">Check here to view Images</string>
+    <string name="no_images">No images to upload</string>
+    <string name="add_images">Add images here..\nCapture using Camera or pick from Gallery.</string>
+    <string name="uploaded_images">Uploaded Images</string>
+</resources>
